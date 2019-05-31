@@ -4,26 +4,75 @@
     <title>The Riches of Silver</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Merienda+One&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/rellax.min.js"></script>
   </head>
   <body>
-    <header>
+    <div class="leafs">
+      <img class="leaf-1 leaf rellax" data-rellax-speed="-3" data-rellax-percentage="0.5" style="transform: rotate(45deg);" src="images/leaf1.png" />
+      <img class="leaf-2 leaf rellax" data-rellax-speed="1" data-rellax-percentage="-3" style="transform: rotate(-35deg);" src="images/leaf2.png" />
+      <img class="leaf-3 leaf rellax" data-rellax-speed="3" data-rellax-percentage="0.5" style="transform: rotate(35deg);" src="images/leaf3.png" />
+      <img class="leaf-4 leaf rellax" data-rellax-speed="-2" data-rellax-percentage="1"  src="images/leaf4.png" />
+      <img class="leaf-5 leaf rellax" data-rellax-speed="-2" data-rellax-percentage="0.5"  src="images/leaf6.png" />
+      <img class="leaf-6 leaf rellax" data-rellax-speed="5" data-rellax-percentage="0.5"  src="images/leaf5.png" />
+      <img class="leaf-7 leaf rellax" data-rellax-speed="3" data-rellax-percentage="1"  src="images/leaf7.png" style="transform: rotate(-135deg);" />
+
+    </div>
+
+    <header class="site-header container">
       <h1 class="heading">The Riches of Silver</h1>
-      <p>Growing old holds its own exceptional essence fueled by wisdom gained only through time, challenging and joyous experiences turned memories, and the relationships that have formed and aged alongside you. Through poetry and water color painting, The Riches of Silver pay homage to the extraordinary, beautiful journey of growing old.</p>
-      <img src="#" />
+      <p class="intro-para">Growing old holds its own exceptional essence fueled by wisdom gained only through time, challenging and joyous experiences turned memories, and the relationships that have formed and aged alongside you. Through poetry and water color painting, The Riches of Silver pay homage to the extraordinary, beautiful journey of growing old.</p>
+      <img class="front-cover" src="images/TheRichesOfSilver.jpg" alt="The Riches of Silver Front Cover" />
       <a class="btn purchase-btn" href="#">Purchase Now</a>
     </header>
     <main>
-      <section class="video-section">
+      <section class="video-section container">
         <div class="video-embed">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ifElv18k2O8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
       <section class="book-beginnings">
-        <h2 class="heading">How the book came to be:</h2>
-        <p>The inspiration for this book originated from the team at Videos That Matter based on personal experiences with family members.  There are things that are difficult to talk about, and growing old and death are at the top of the list.  When the founder’s brother, and later, his mother were near death, it fell upon him to make difficult decisions with a lot of stress and heartbreak that could have been avoided if he’d only had a conversation sooner in their time together. </p>
-        <p>The focus of this book, and all the work that we do at Videos That Matter, is to stimulate conversations that promote health and wellbeing.</p>
+        <div class="container book-beginnings-grid">
+          <div class="book-beginnings-content book-beginnings-how">
+            <h2 class="heading">How the Book came to be:</h2>
+            <p>The inspiration for this book originated from the team at <a href="https://videosthatmatter.org/" target="_blank">Videos That Matter</a> based on personal experiences with family members.  There are things that are difficult to talk about, and growing old and death are at the top of the list.  When the founder’s brother, and later, his mother were near death, it fell upon him to make difficult decisions with a lot of stress and heartbreak that could have been avoided if he’d only had a conversation sooner in their time together. </p>
+            <p>The focus of this book, and all the work that we do at <a href="https://videosthatmatter.org/" target="_blank">Videos That Matter</a>, is to stimulate conversations that promote health and wellbeing.</p>
+          </div>
+          <div class="book-beginnings-content book-beginnings-use">
+              <h2 class="heading">How to Use this Book:</h2>
+              <p>This book and accompanying video are meant to begin a conversation across generations, specifically, a conversation about death. It can be used with children, to explain the natural process of a grandparent’s imminent or recent death. In this way, it can prepare or help children through loss by presenting the idea that death is a natural, unavoidable part of life. Children are naturally inquisitive and won’t be fearful about this subject unless they are taught to respond that way from adults.</p>
+              <p>Adults can also use it to initiate a conversation about advanced health directives with their parents. All too often, these conversations don’t happen, especially when death is treated as a taboo subject, and family members are left making difficult decisions with no knowledge of their parent’s wishes.</p>
+            </div>
+        </div>
       </section>
+      <div class="container book-beginnings-content">
+        <h3 class="heading">Videos That Matter:</h3>
+        <p>Our mission at Videos That Matter is to create original, creative, and impactful content that activates and educates individuals on issues and values that impact health and wellbeing. We do this through, videos, conversation guides, and collaboration with artists. Storytelling through music videos and animations gives us the opportunity to work with musicians, actors, illustrators, dancers, poets, and filmmakers to create awareness in a way not commonly seen.</p>
+        <p>Videos that Matter is an initiative of Core Communities, a 501(c)3 Nonprofit organization.</p>
+      </div>
+
     </main>
     <footer></footer>
+    <script>
+      ScrollReveal().reveal('h1',  { delay: 100, distance: '30px',  origin: 'top',  duration: 1900,  opacity: 0 });
+      ScrollReveal().reveal('.intro-para',  { delay: 250, distance: '30px',  origin: 'top', duration: 1900,  opacity: 0 });
+      ScrollReveal().reveal('.front-cover',  { delay: 500, distance: '30px',  origin: 'top', duration: 1900,  opacity: 0 });
+      ScrollReveal().reveal('.purchase-btn',  { delay: 0, distance: '30px',  origin: 'top', duration: 1900,  opacity: 0 });
+      ScrollReveal().reveal('.video-section',  { delay: 0, distance: '30px',  origin: 'top', duration: 1900,  opacity: 0 });
+      ScrollReveal().reveal('.book-beginnings-how',  { delay: 150, distance: '30px',  origin: 'top', duration: 1900,  opacity: 0 });
+      ScrollReveal().reveal('.book-beginnings-use',  { delay: 550, distance: '30px',  origin: 'top', duration: 1900,  opacity: 0 });
+      
+    </script>
+    <script>
+        var rellax = new Rellax('.rellax', {
+          // center: true
+          callback: function(position) {
+              // callback every position change
+              console.log(position);
+          }
+        });
+      </script>
   </body>
 </html>
