@@ -154,7 +154,7 @@ a.btn:hover {
 .leaf-7 {
   position: absolute;
   width: 230px;
-  top: 2300px;
+  top: 2600px;
   left: 30px;
 }
 /* 
@@ -222,3 +222,11 @@ a.btn:hover {
   font-size: .85rem;
 }
 
+.vtm-content {
+  padding: 3rem 0;
+}
+.vtm-content img {
+  max-width: 250px;
+  display: block;
+  margin: 0 auto 2rem;
+}
