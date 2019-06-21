@@ -230,3 +230,31 @@ a.btn:hover {
   display: block;
   margin: 0 auto 2rem;
 }
+
+.resources {
+  padding: 2rem 0 4rem;
+  text-align: center;
+
+}
+.resources-grid {
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 2rem;
+}
+
+a.resource-link {
+  text-decoration: none;
+  background: #51a424;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  transition: all .35s ease-in-out;
+  color: #Fff;
+  font-family: 'Merienda One', cursive;
+}
+a.resource-link:hover {
+  background-color: #489220;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.35);
+}
