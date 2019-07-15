@@ -236,6 +236,25 @@ a.btn:hover {
   text-align: center;
 
 }
+
+.sponsorship {
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 5px;
+  padding: 35px 50px 25px;
+  border: 1px solid #bfbfbf;
+}
+@media (min-width: 768px) { 
+  .sponsorship {
+    padding: 35px 150px 25px;
+  }
+}
+.sponsorship h3 {
+  margin-bottom: 0.5rem;
+}
+.sponsorship a {
+  color: #51a325;
+}
 .resources-grid {
 display: grid;
     grid-template-columns: 1fr 1fr;
